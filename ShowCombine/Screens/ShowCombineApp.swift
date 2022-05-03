@@ -11,7 +11,7 @@ import SwiftUI
 struct ShowCombineApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
