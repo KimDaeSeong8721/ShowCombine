@@ -42,7 +42,7 @@ enum HomeViewModel : Int, CaseIterable, Identifiable {
     var content : String{
         switch self {
         case .async : return "비동기 프로그래밍이란 다른 작업을 기다리지 않고 바로 자신의 작업을 진행하는 프로그래밍이다.\n\n 비동기 API 핵심은  background에서 돌고 있는 함수가 완료되는 순간을 인지하는 것이고\n\n 비동기 API는 대표적으로 3가지 callback,Notification Center, Delegate패턴"
-        case .combine : return ""
+        case .combine : return "시스템 레벨에서 비동기 API들을 하나의 프로세스로 통합하는 새로운 프레임워크"
             
         case .how : return ""
         }

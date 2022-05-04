@@ -17,7 +17,7 @@ class CollectionViewCell: UICollectionViewCell {
     super.init(frame: frame)
     
     contentView.layer.cornerRadius = frame.width / 2.0
-    contentView.backgroundColor = UIColor(red: 0.0, green: 0.9, blue: 0.9, alpha: 0.8)
+      contentView.backgroundColor = .white
   }
     
     override var isSelected: Bool {

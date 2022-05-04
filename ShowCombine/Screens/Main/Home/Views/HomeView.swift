@@ -28,7 +28,7 @@ struct HomeView: View {
                             .sheet(item: $selectedItem) { selectedItem in
                                 
                                 SheetView(selectedItem: selectedItem)
-                               
+                                //                                SheetView(title: HomeViewModel(rawValue: selectedItem)?.title!, image: HomeViewModel(rawValue: selectedItem)?.image!)
                             }
 
                             

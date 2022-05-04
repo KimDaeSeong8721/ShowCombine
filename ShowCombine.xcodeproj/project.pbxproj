@@ -21,6 +21,15 @@
 		35EF22072820C830001F6097 /* HomeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22062820C830001F6097 /* HomeCardView.swift */; };
 		35EF22092820DB46001F6097 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22082820DB46001F6097 /* HomeViewModel.swift */; };
 		35EF220B28213FC7001F6097 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF220A28213FC7001F6097 /* SheetView.swift */; };
+		35EF222F2821966E001F6097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF222E2821966E001F6097 /* Constants.swift */; };
+		35EF2231282197B7001F6097 /* SheetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF2230282197B7001F6097 /* SheetCardView.swift */; };
+		35EF223328221BC5001F6097 /* DicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF223228221BC5001F6097 /* DicCardView.swift */; };
+		35EF2239282223C3001F6097 /* CoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF2238282223C3001F6097 /* CoreCard.swift */; };
+		35EF223B28225E56001F6097 /* AsyncCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF223A28225E56001F6097 /* AsyncCard.swift */; };
+		35EF223D2822638C001F6097 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF223C2822638C001F6097 /* Card.swift */; };
+		35EF223F282267D9001F6097 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF223E282267D9001F6097 /* CustomCorner.swift */; };
+		35EF224128227972001F6097 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF224028227972001F6097 /* SnapCarousel.swift */; };
+		35EF224328227B3B001F6097 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF224228227B3B001F6097 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +48,15 @@
 		35EF22062820C830001F6097 /* HomeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardView.swift; sourceTree = "<group>"; };
 		35EF22082820DB46001F6097 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		35EF220A28213FC7001F6097 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		35EF222E2821966E001F6097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		35EF2230282197B7001F6097 /* SheetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCardView.swift; sourceTree = "<group>"; };
+		35EF223228221BC5001F6097 /* DicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicCardView.swift; sourceTree = "<group>"; };
+		35EF2238282223C3001F6097 /* CoreCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCard.swift; sourceTree = "<group>"; };
+		35EF223A28225E56001F6097 /* AsyncCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCard.swift; sourceTree = "<group>"; };
+		35EF223C2822638C001F6097 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		35EF223E282267D9001F6097 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		35EF224028227972001F6097 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
+		35EF224228227B3B001F6097 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +136,7 @@
 		35745D1C282004C100F3D82E /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				35EF223E282267D9001F6097 /* CustomCorner.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -133,6 +152,7 @@
 		35745D1E282004C900F3D82E /* Literal */ = {
 			isa = PBXGroup;
 			children = (
+				35EF222E2821966E001F6097 /* Constants.swift */,
 			);
 			path = Literal;
 			sourceTree = "<group>";
@@ -158,8 +178,8 @@
 		35745D21282006BB00F3D82E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				35EF22012820BCE4001F6097 /* ViewModels */,
 				35745D23282006E700F3D82E /* Views */,
+				35EF22012820BCE4001F6097 /* Models */,
 				35745D22282006D900F3D82E /* Component */,
 			);
 			path = Home;
@@ -168,6 +188,7 @@
 		35745D22282006D900F3D82E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				35EF224028227972001F6097 /* SnapCarousel.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -178,6 +199,7 @@
 				35745D2E2820078B00F3D82E /* HomeView.swift */,
 				35EF22062820C830001F6097 /* HomeCardView.swift */,
 				35EF220A28213FC7001F6097 /* SheetView.swift */,
+				35EF2230282197B7001F6097 /* SheetCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,7 +207,7 @@
 		35745D24282006FF00F3D82E /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				35EF22002820BCD8001F6097 /* ViewModels */,
+				35EF22002820BCD8001F6097 /* Models */,
 				35745D262820071400F3D82E /* Views */,
 				35745D252820071100F3D82E /* Component */,
 			);
@@ -203,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				35745D2C2820078600F3D82E /* DictionaryView.swift */,
+				35EF223228221BC5001F6097 /* DicCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,7 +233,7 @@
 		35745D272820073F00F3D82E /* Review */ = {
 			isa = PBXGroup;
 			children = (
-				35EF21FF2820BCCE001F6097 /* ViewModels */,
+				35EF21FF2820BCCE001F6097 /* Models */,
 				35745D292820074F00F3D82E /* Views */,
 				35745D282820074700F3D82E /* Component */,
 			);
@@ -235,26 +258,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		35EF21FF2820BCCE001F6097 /* ViewModels */ = {
+		35EF21FF2820BCCE001F6097 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		35EF22002820BCD8001F6097 /* ViewModels */ = {
+		35EF22002820BCD8001F6097 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35EF2238282223C3001F6097 /* CoreCard.swift */,
+				35EF223A28225E56001F6097 /* AsyncCard.swift */,
+				35EF223C2822638C001F6097 /* Card.swift */,
 			);
-			path = ViewModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		35EF22012820BCE4001F6097 /* ViewModels */ = {
+		35EF22012820BCE4001F6097 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				35EF22082820DB46001F6097 /* HomeViewModel.swift */,
+				35EF224228227B3B001F6097 /* Post.swift */,
 			);
-			path = ViewModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,16 +354,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EF223328221BC5001F6097 /* DicCardView.swift in Sources */,
+				35EF223D2822638C001F6097 /* Card.swift in Sources */,
+				35EF2239282223C3001F6097 /* CoreCard.swift in Sources */,
 				35745D3228200A2500F3D82E /* CollectionView.swift in Sources */,
+				35EF223B28225E56001F6097 /* AsyncCard.swift in Sources */,
 				35EF22092820DB46001F6097 /* HomeViewModel.swift in Sources */,
 				35EF22052820BF1F001F6097 /* Color+Extension.swift in Sources */,
 				35745D2D2820078600F3D82E /* DictionaryView.swift in Sources */,
+				35EF223F282267D9001F6097 /* CustomCorner.swift in Sources */,
+				35EF224128227972001F6097 /* SnapCarousel.swift in Sources */,
+				35EF2231282197B7001F6097 /* SheetCardView.swift in Sources */,
 				35EF22032820BD33001F6097 /* MainTabView.swift in Sources */,
+				35EF224328227B3B001F6097 /* Post.swift in Sources */,
 				35745D3628200B3400F3D82E /* CollectionViewCell.swift in Sources */,
 				35EF22072820C830001F6097 /* HomeCardView.swift in Sources */,
 				35745D3428200ADB00F3D82E /* CollectionViewLayout.swift in Sources */,
 				35745D2B2820077B00F3D82E /* ReviewView.swift in Sources */,
 				35745D2F2820078B00F3D82E /* HomeView.swift in Sources */,
+				35EF222F2821966E001F6097 /* Constants.swift in Sources */,
 				35EF220B28213FC7001F6097 /* SheetView.swift in Sources */,
 				35745D0C281FEFCC00F3D82E /* ShowCombineApp.swift in Sources */,
 			);

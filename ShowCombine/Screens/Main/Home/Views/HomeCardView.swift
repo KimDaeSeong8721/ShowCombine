@@ -17,7 +17,7 @@ struct HomeCardView: View {
             
             Image(image)
                 .resizable()
-                .cornerRadius(10)
+                .cornerRadius(Constants.cornerRadius)
             
             VStack{
                 Spacer()

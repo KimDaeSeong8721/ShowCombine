@@ -12,7 +12,9 @@ extension Color {
     static var backgroundColor : Color {
         return Color(hex: "#F4F6FA")
     }
-    
+    static var titleBackgroundColor : Color {
+        return Color(hex: "#747B82")
+    }
 }
 
 extension Color {
