@@ -32,9 +32,9 @@ struct DictionaryView: View {
                                 ForEach(0..<3){ index in
                                 NavigationLink {
                                     if index == 0 {
-                                        PublisherView()
+                                        PublisherView(card : CoreCard.SampleData[index])
                                     } else if index == 1 {
-                                        OperatorView()
+                                        OperatorView(card: CoreCard.SampleData[index])
                                     }
                                     else if index == 2 {
                                         SubscriberView()
@@ -101,6 +101,7 @@ struct DictionaryView: View {
                     .background(Color.backgroundColor)
                     .navigationTitle("Dictionary")
                     .navigationBarTitleDisplayMode(.inline)
+                    .searchable(text: $searchText)
                 
                 
                 

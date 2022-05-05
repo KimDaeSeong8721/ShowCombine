@@ -33,11 +33,9 @@
 		35EF225F2822F0E1001F6097 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF225E2822F0E1001F6097 /* NotificationView.swift */; };
 		35EF22612822F0EA001F6097 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22602822F0EA001F6097 /* TimersView.swift */; };
 		35EF22632822F0F1001F6097 /* NetworkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22622822F0F1001F6097 /* NetworkingView.swift */; };
-		35EF22652822F0F6001F6097 /* GCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22642822F0F6001F6097 /* GCDView.swift */; };
 		35EF22672822F9BA001F6097 /* DicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22662822F9BA001F6097 /* DicViewModel.swift */; };
 		35EF22692822FF92001F6097 /* CodeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22682822FF92001F6097 /* CodeSheetView.swift */; };
 		35EF226B28236413001F6097 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF226A28236413001F6097 /* TabButton.swift */; };
-		35EF226D28237495001F6097 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF226C28237495001F6097 /* NotificationViewModel.swift */; };
 		35EF227128237F58001F6097 /* PublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227028237F58001F6097 /* PublisherView.swift */; };
 		35EF227328237F5F001F6097 /* OperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227228237F5F001F6097 /* OperatorView.swift */; };
 		35EF227528237F69001F6097 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227428237F69001F6097 /* SubscriberView.swift */; };
@@ -72,11 +70,9 @@
 		35EF225E2822F0E1001F6097 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		35EF22602822F0EA001F6097 /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
 		35EF22622822F0F1001F6097 /* NetworkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingView.swift; sourceTree = "<group>"; };
-		35EF22642822F0F6001F6097 /* GCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDView.swift; sourceTree = "<group>"; };
 		35EF22662822F9BA001F6097 /* DicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicViewModel.swift; sourceTree = "<group>"; };
 		35EF22682822FF92001F6097 /* CodeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSheetView.swift; sourceTree = "<group>"; };
 		35EF226A28236413001F6097 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
-		35EF226C28237495001F6097 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		35EF227028237F58001F6097 /* PublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherView.swift; sourceTree = "<group>"; };
 		35EF227228237F5F001F6097 /* OperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorView.swift; sourceTree = "<group>"; };
 		35EF227428237F69001F6097 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
@@ -301,7 +297,6 @@
 				35EF223A28225E56001F6097 /* AsyncCard.swift */,
 				35EF223C2822638C001F6097 /* Card.swift */,
 				35EF22662822F9BA001F6097 /* DicViewModel.swift */,
-				35EF226C28237495001F6097 /* NotificationViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,7 +316,6 @@
 				35EF225E2822F0E1001F6097 /* NotificationView.swift */,
 				35EF22602822F0EA001F6097 /* TimersView.swift */,
 				35EF22622822F0F1001F6097 /* NetworkingView.swift */,
-				35EF22642822F0F6001F6097 /* GCDView.swift */,
 			);
 			path = Async;
 			sourceTree = "<group>";
@@ -419,7 +413,6 @@
 				35EF223F282267D9001F6097 /* CustomCorner.swift in Sources */,
 				35EF22632822F0F1001F6097 /* NetworkingView.swift in Sources */,
 				35EF224128227972001F6097 /* SnapCarousel.swift in Sources */,
-				35EF22652822F0F6001F6097 /* GCDView.swift in Sources */,
 				35EF2231282197B7001F6097 /* SheetCardView.swift in Sources */,
 				35EF22032820BD33001F6097 /* MainTabView.swift in Sources */,
 				35EF224328227B3B001F6097 /* Post.swift in Sources */,
@@ -438,7 +431,6 @@
 				35EF220B28213FC7001F6097 /* SheetView.swift in Sources */,
 				35745D0C281FEFCC00F3D82E /* ShowCombineApp.swift in Sources */,
 				35EF227528237F69001F6097 /* SubscriberView.swift in Sources */,
-				35EF226D28237495001F6097 /* NotificationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -549,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

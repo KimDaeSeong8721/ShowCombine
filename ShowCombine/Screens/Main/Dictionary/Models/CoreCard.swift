@@ -28,7 +28,7 @@ extension CoreCard {
     [ CoreCard(image: "publisher",
                title: "Publisher",
                subTitle: "emit Value",
-               content: "값을 포함하는 이벤트를 발행하고 방출시킨다. => 값을 주는 애 (생성자)",
+               content: "값을 포함하는 이벤트를 발행하고 방출시킨다. \n=> 값을 주는 애 (생성자)",
                protocolCode: "protocol Publisher { associatedtype Output  associatedtype Failure : Error  func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input}",
                producingCodes: ["Just","Future","Deffered","Empty","Fail","Record"],
                method: ["sink","subscribe","assign(to:on)"]),

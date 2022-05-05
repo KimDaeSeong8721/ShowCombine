@@ -19,6 +19,12 @@ extension Color {
     static var codeViewerGray : Color {
         return Color(hex: "#C4C4C4")
     }
+    static var reviewBackground : Color {
+        return Color(hex: "#C3D7FF")
+    }
+    static var bubbleColor : Color {
+        return Color(hex: "#7694FF")
+    }
 }
 
 extension Color {

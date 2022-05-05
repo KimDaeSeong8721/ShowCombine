@@ -22,7 +22,7 @@ struct NotificationView: View {
     }
     var body: some View {
 
-        NavigationView{
+   
             GeometryReader{ proxy in
                 VStack(spacing : 50){
                 
@@ -31,12 +31,16 @@ struct NotificationView: View {
                     ZStack{
                 RoundedRectangle(cornerRadius: Constants.cornerRadius)
                     .foregroundColor(.white)
-                    .frame(width:  proxy.size.width*0.7, height: proxy.size.height*0.5)
+                    .frame(width:  proxy.size.width*0.8, height: proxy.size.height*0.5)
                     
                         if isArrived {
                             Text("Notification 도착 완료")
+                                .font(.title)
+                                .bold()
                         } else {
                             Text("Notication 도착 전")
+                                .font(.title3)
+                                .bold()
                         }
                     
                     }
@@ -52,12 +56,14 @@ struct NotificationView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: Constants.cornerRadius)
                             .foregroundColor(.white)
-                        .frame(width:  proxy.size.width*0.7, height: proxy.size.height*0.1)
+                        .frame(width:  proxy.size.width*0.8, height: proxy.size.height*0.1)
                             
                             if isArrived{
                                 Text("초기화하기")
                             } else{
                                 Text("Notification 보내기")
+                                    .font(.title3)
+                                    .bold()
 
                             }
                         }
@@ -87,7 +93,7 @@ struct NotificationView: View {
                 CodeSheetView()
             }
             }
-        }
+        
       
     }
 

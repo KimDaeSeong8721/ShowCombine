@@ -54,7 +54,7 @@ extension SheetView {
                                     .clipShape(CustomCorner(corners: [.topLeft,.topRight], radius: Constants.cornerRadius))
                                 
                                 Spacer()
-                            }.padding()
+                            }.padding(.all,Constants.paddingValue)
                             
                             
                             
@@ -64,8 +64,8 @@ extension SheetView {
                                         .font(.title2)
                                         .fontWeight(.bold)
                                         .foregroundColor(.white)
-                                        .padding(.top,10)
-                                        .padding(.leading,10)
+                                        .padding(.top,25)
+                                        .padding(.leading,Constants.paddingValue)
                                     
                                     
                                     Spacer()
@@ -74,12 +74,13 @@ extension SheetView {
                                 
                                 // contents
                                 Text(selectedItem.content)
-                                    .padding()
+                                    .padding(.all,Constants.paddingValue)
                                 
                                 Image("async")
                                     .resizable()
                                     .scaledToFit()
-                                    .padding()
+                                    .padding(.all,Constants.paddingValue)
+                                    .padding(.leading,25)
                                 Spacer()
                             }
                         }
@@ -111,7 +112,7 @@ extension SheetView {
                 
                  
                 VStack(){
-                SnapCarousel(spacing: 20,
+                    SnapCarousel(spacing: Constants.paddingValue,
                              index: $currentIndex,
                              items: posts) { post in
                     
@@ -206,7 +207,7 @@ extension SheetView {
             Rectangle()
                 .foregroundColor(.white)
                 .cornerRadius(Constants.cornerRadius)
-                .padding()
+                .padding(.all,30)
         }
     }
     

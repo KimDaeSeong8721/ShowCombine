@@ -45,8 +45,10 @@ struct SheetCardView: View {
                     
                     
                     if let image = post.postImage{
+                        Spacer()
                         Image(image)
                             .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .padding(.leading,70)
                             .padding(.top,100)
                     }

@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct ReviewView: View {
+    
+    
+    init(){
+        UINavigationBar.appearance().barTintColor = .white
+    //    UINavigationBar.appearance().backgroundColor = .white
+
+    }
     var body: some View {
-        
+        NavigationView{
         VStack{
+            
             CollectionView()
 
         }
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        .frame(width: UIScreen.main.bounds.width)
         .background(Color.backgroundColor)
-
+        .navigationTitle("review")
+        .navigationBarTitleDisplayMode(.inline)
+            
+    }
     }
 }
 

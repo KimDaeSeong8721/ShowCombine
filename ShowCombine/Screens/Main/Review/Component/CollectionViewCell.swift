@@ -16,7 +16,7 @@ class CollectionViewCell: UICollectionViewCell {
         label.text = ""
         label.backgroundColor = .clear
         label.clipsToBounds = true
-       
+         // label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.textAlignment = .center
         return label
@@ -32,7 +32,7 @@ class CollectionViewCell: UICollectionViewCell {
        addSubview(label)
 
       label.layer.cornerRadius = frame.width / 2.0
-      label.backgroundColor = UserDefaults.standard.bool(forKey: "areReviewed\(id)") ? .green : .white
+      label.backgroundColor = UserDefaults.standard.bool(forKey: "areReviewed\(id)") ? UIColor(cgColor: Color.bubbleColor.cgColor!) : .white
   }
     override func layoutSubviews() {
         label.frame = contentView.bounds
@@ -42,7 +42,7 @@ class CollectionViewCell: UICollectionViewCell {
     public func configure(with model : Word){
         label.text = model.word
         self.id = model.id
-        label.backgroundColor = UserDefaults.standard.bool(forKey: "areReviewed\(id)") ? .green : .white
+        label.backgroundColor = UserDefaults.standard.bool(forKey: "areReviewed\(id)") ? UIColor(cgColor: Color.bubbleColor.cgColor!) : .white
         
     
         //print(UserDefaults.standard.array(forKey: "areReviewed")![id] as! Bool)
@@ -56,7 +56,7 @@ class CollectionViewCell: UICollectionViewCell {
 
             if self.isSelected {
                 //수정필요 저장된 값 가져올때 이미 isSelected는 false..
-                label.backgroundColor = .green
+                label.backgroundColor = UIColor(cgColor: Color.bubbleColor.cgColor!)
                 UserDefaults.standard.set(true, forKey: "areReviewed\(id)")
 
             } else{

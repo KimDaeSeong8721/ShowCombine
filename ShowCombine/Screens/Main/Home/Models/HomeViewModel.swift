@@ -34,8 +34,8 @@ enum HomeViewModel : Int, CaseIterable, Identifiable {
     
     var title: String {
         switch self {
-        case .async : return "비동기 프로그래밍이란?"
-        case .combine : return "컴바인이란?"
+        case .async : return "비동기 프로그래밍이란"
+        case .combine : return "컴바인이란"
         case .how : return "How"
         }
     }

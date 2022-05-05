@@ -21,10 +21,11 @@ struct CollectionView: UIViewRepresentable {
         collectionView.allowsMultipleSelection = true
         collectionView.dataSource = context.coordinator
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
-        collectionView.backgroundColor = UIColor(cgColor: Color.backgroundColor.cgColor!)
-        
+        collectionView.backgroundColor = UIColor(cgColor: Color.reviewBackground.cgColor!)
+         
+
         return collectionView
-    }
+    }  
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
         //

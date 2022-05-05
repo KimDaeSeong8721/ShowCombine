@@ -23,10 +23,11 @@ struct HomeCardView: View {
                 Spacer()
                 HStack{
                     Text(text)
-                        .font(.headline)
+                        .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                        .padding(.all,5)
+                        .padding(.all,12)
+                        .padding(.leading,4)
                     Spacer()
                 }
             }
