@@ -8,8 +8,8 @@
 
 import UIKit
 
-let COLS = 10
-let ROWS = 10
+let COLS = 8
+let ROWS = 7
 
 class CollectionViewLayout: UICollectionViewLayout {
   let interimSpace: CGFloat = 0.0

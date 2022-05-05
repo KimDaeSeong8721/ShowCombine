@@ -28,17 +28,25 @@ struct DictionaryView: View {
                         }
                         
                         ScrollView(.horizontal, showsIndicators: false) {
-                            // lazyhstack 쓰면 레이아웃이 내려가네 왜지?
                             LazyHStack{
-                                
                                 ForEach(0..<3){ index in
+                                NavigationLink {
+                                    if index == 0 {
+                                        PublisherView()
+                                    } else if index == 1 {
+                                        OperatorView()
+                                    }
+                                    else if index == 2 {
+                                        SubscriberView()
+                                    }
+                                } label: {
                                     DicCardView(card: CoreCard.SampleData[index])
                                         .frame(width: proxy.size.width*0.5, height: proxy.size.height*0.45)
+                                        .foregroundColor(.black)
                                         .cornerRadius(10)
                                         .padding(.horizontal)
                                 }
-                                
-                              
+                                }
                                
                             }
                             
@@ -60,10 +68,26 @@ struct DictionaryView: View {
                             
                             LazyHStack{
                                 ForEach(0..<3){ index in
-                                    DicCardView(card: AsyncCard.SampleData[index])
-                                        .frame(width: proxy.size.width*0.5, height: proxy.size.height*0.45)
-                                        .cornerRadius(10)
-                                        .padding(.horizontal)
+                                    
+                                    
+                                    NavigationLink {
+                                        if index == 0 {
+                                            NotificationView()
+                                        } else if index == 1 {
+                                            TimersView()
+                                        }
+                                        else if index == 2 {
+                                            NetworkingView()
+                                        }
+                                    } label: {
+                                        DicCardView(card: AsyncCard.SampleData[index])
+                                            .frame(width: proxy.size.width*0.5, height: proxy.size.height*0.45)
+                                            .foregroundColor(.black)
+                                            .cornerRadius(10)
+                                            .padding(.horizontal)
+                                    }
+
+                                  
                                 }
                             }
                             

@@ -37,19 +37,23 @@ struct CollectionView: UIViewRepresentable {
     class Coordinator: NSObject, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
      
         private let parent: CollectionView
-        let cellCount = ROWS * COLS
+      //  let cellCount = ROWS * COLS
 
                init(_ collectionView: CollectionView) {
                    self.parent = collectionView
                }
                
                func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                   cellCount
+                   Word.sampleData.count
                }
                
                func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                   let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath)
-                //   cell.backgroundColor = .blue
+                   let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+                   
+                   
+                    let model = Word.sampleData[indexPath.row]
+                   cell.label.text = model.word
+                   cell.configure(with : model)
                    return cell
                }
                

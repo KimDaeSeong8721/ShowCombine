@@ -30,6 +30,18 @@
 		35EF223F282267D9001F6097 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF223E282267D9001F6097 /* CustomCorner.swift */; };
 		35EF224128227972001F6097 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF224028227972001F6097 /* SnapCarousel.swift */; };
 		35EF224328227B3B001F6097 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF224228227B3B001F6097 /* Post.swift */; };
+		35EF225F2822F0E1001F6097 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF225E2822F0E1001F6097 /* NotificationView.swift */; };
+		35EF22612822F0EA001F6097 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22602822F0EA001F6097 /* TimersView.swift */; };
+		35EF22632822F0F1001F6097 /* NetworkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22622822F0F1001F6097 /* NetworkingView.swift */; };
+		35EF22652822F0F6001F6097 /* GCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22642822F0F6001F6097 /* GCDView.swift */; };
+		35EF22672822F9BA001F6097 /* DicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22662822F9BA001F6097 /* DicViewModel.swift */; };
+		35EF22692822FF92001F6097 /* CodeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF22682822FF92001F6097 /* CodeSheetView.swift */; };
+		35EF226B28236413001F6097 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF226A28236413001F6097 /* TabButton.swift */; };
+		35EF226D28237495001F6097 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF226C28237495001F6097 /* NotificationViewModel.swift */; };
+		35EF227128237F58001F6097 /* PublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227028237F58001F6097 /* PublisherView.swift */; };
+		35EF227328237F5F001F6097 /* OperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227228237F5F001F6097 /* OperatorView.swift */; };
+		35EF227528237F69001F6097 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227428237F69001F6097 /* SubscriberView.swift */; };
+		35EF227728238CF2001F6097 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF227628238CF2001F6097 /* Words.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +69,18 @@
 		35EF223E282267D9001F6097 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		35EF224028227972001F6097 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 		35EF224228227B3B001F6097 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		35EF225E2822F0E1001F6097 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		35EF22602822F0EA001F6097 /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
+		35EF22622822F0F1001F6097 /* NetworkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingView.swift; sourceTree = "<group>"; };
+		35EF22642822F0F6001F6097 /* GCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDView.swift; sourceTree = "<group>"; };
+		35EF22662822F9BA001F6097 /* DicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicViewModel.swift; sourceTree = "<group>"; };
+		35EF22682822FF92001F6097 /* CodeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSheetView.swift; sourceTree = "<group>"; };
+		35EF226A28236413001F6097 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		35EF226C28237495001F6097 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		35EF227028237F58001F6097 /* PublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherView.swift; sourceTree = "<group>"; };
+		35EF227228237F5F001F6097 /* OperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorView.swift; sourceTree = "<group>"; };
+		35EF227428237F69001F6097 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
+		35EF227628238CF2001F6097 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +212,8 @@
 		35745D22282006D900F3D82E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				35EF2230282197B7001F6097 /* SheetCardView.swift */,
+				35EF22062820C830001F6097 /* HomeCardView.swift */,
 				35EF224028227972001F6097 /* SnapCarousel.swift */,
 			);
 			path = Component;
@@ -197,9 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				35745D2E2820078B00F3D82E /* HomeView.swift */,
-				35EF22062820C830001F6097 /* HomeCardView.swift */,
 				35EF220A28213FC7001F6097 /* SheetView.swift */,
-				35EF2230282197B7001F6097 /* SheetCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +241,8 @@
 		35745D252820071100F3D82E /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				35EF223228221BC5001F6097 /* DicCardView.swift */,
+				35EF226A28236413001F6097 /* TabButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -225,7 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				35745D2C2820078600F3D82E /* DictionaryView.swift */,
-				35EF223228221BC5001F6097 /* DicCardView.swift */,
+				35EF22682822FF92001F6097 /* CodeSheetView.swift */,
+				35EF226F28237F2E001F6097 /* CoreConcept */,
+				35EF226E28237F27001F6097 /* Async */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +289,7 @@
 		35EF21FF2820BCCE001F6097 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35EF227628238CF2001F6097 /* Words.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +300,8 @@
 				35EF2238282223C3001F6097 /* CoreCard.swift */,
 				35EF223A28225E56001F6097 /* AsyncCard.swift */,
 				35EF223C2822638C001F6097 /* Card.swift */,
+				35EF22662822F9BA001F6097 /* DicViewModel.swift */,
+				35EF226C28237495001F6097 /* NotificationViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +313,27 @@
 				35EF224228227B3B001F6097 /* Post.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		35EF226E28237F27001F6097 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				35EF225E2822F0E1001F6097 /* NotificationView.swift */,
+				35EF22602822F0EA001F6097 /* TimersView.swift */,
+				35EF22622822F0F1001F6097 /* NetworkingView.swift */,
+				35EF22642822F0F6001F6097 /* GCDView.swift */,
+			);
+			path = Async;
+			sourceTree = "<group>";
+		};
+		35EF226F28237F2E001F6097 /* CoreConcept */ = {
+			isa = PBXGroup;
+			children = (
+				35EF227028237F58001F6097 /* PublisherView.swift */,
+				35EF227228237F5F001F6097 /* OperatorView.swift */,
+				35EF227428237F69001F6097 /* SubscriberView.swift */,
+			);
+			path = CoreConcept;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,24 +409,36 @@
 				35EF223328221BC5001F6097 /* DicCardView.swift in Sources */,
 				35EF223D2822638C001F6097 /* Card.swift in Sources */,
 				35EF2239282223C3001F6097 /* CoreCard.swift in Sources */,
+				35EF225F2822F0E1001F6097 /* NotificationView.swift in Sources */,
 				35745D3228200A2500F3D82E /* CollectionView.swift in Sources */,
 				35EF223B28225E56001F6097 /* AsyncCard.swift in Sources */,
 				35EF22092820DB46001F6097 /* HomeViewModel.swift in Sources */,
+				35EF226B28236413001F6097 /* TabButton.swift in Sources */,
 				35EF22052820BF1F001F6097 /* Color+Extension.swift in Sources */,
 				35745D2D2820078600F3D82E /* DictionaryView.swift in Sources */,
 				35EF223F282267D9001F6097 /* CustomCorner.swift in Sources */,
+				35EF22632822F0F1001F6097 /* NetworkingView.swift in Sources */,
 				35EF224128227972001F6097 /* SnapCarousel.swift in Sources */,
+				35EF22652822F0F6001F6097 /* GCDView.swift in Sources */,
 				35EF2231282197B7001F6097 /* SheetCardView.swift in Sources */,
 				35EF22032820BD33001F6097 /* MainTabView.swift in Sources */,
 				35EF224328227B3B001F6097 /* Post.swift in Sources */,
+				35EF22692822FF92001F6097 /* CodeSheetView.swift in Sources */,
+				35EF227728238CF2001F6097 /* Words.swift in Sources */,
 				35745D3628200B3400F3D82E /* CollectionViewCell.swift in Sources */,
+				35EF22672822F9BA001F6097 /* DicViewModel.swift in Sources */,
 				35EF22072820C830001F6097 /* HomeCardView.swift in Sources */,
 				35745D3428200ADB00F3D82E /* CollectionViewLayout.swift in Sources */,
 				35745D2B2820077B00F3D82E /* ReviewView.swift in Sources */,
+				35EF227128237F58001F6097 /* PublisherView.swift in Sources */,
 				35745D2F2820078B00F3D82E /* HomeView.swift in Sources */,
 				35EF222F2821966E001F6097 /* Constants.swift in Sources */,
+				35EF22612822F0EA001F6097 /* TimersView.swift in Sources */,
+				35EF227328237F5F001F6097 /* OperatorView.swift in Sources */,
 				35EF220B28213FC7001F6097 /* SheetView.swift in Sources */,
 				35745D0C281FEFCC00F3D82E /* ShowCombineApp.swift in Sources */,
+				35EF227528237F69001F6097 /* SubscriberView.swift in Sources */,
+				35EF226D28237495001F6097 /* NotificationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

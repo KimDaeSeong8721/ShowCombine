@@ -15,6 +15,10 @@ extension Color {
     static var titleBackgroundColor : Color {
         return Color(hex: "#747B82")
     }
+    
+    static var codeViewerGray : Color {
+        return Color(hex: "#C4C4C4")
+    }
 }
 
 extension Color {

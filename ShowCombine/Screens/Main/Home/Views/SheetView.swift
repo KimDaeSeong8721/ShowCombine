@@ -9,19 +9,21 @@ import SwiftUI
 
 struct SheetView: View {
     @Environment(\.presentationMode) var presentationMode
+    
+    // MARK: - properties
     var selectedItem : HomeViewModel
     
     @State var currentIndex : Int = 0 // for slider
     @State var posts: [Post] = []
+    
     var body: some View {
-        
         switch selectedItem {
         case .async:
             asyncSheetView
         case .combine:
             combineSheetView
         case .how:
-            combineSheetView
+            combineSheetView  // 기능 구현하기
         }
         
         
@@ -33,43 +35,12 @@ extension SheetView {
         var asyncSheetView : some View {
             VStack{
                 
-                ZStack
-                {
-                    HStack{
-                        Text("Done")
-                            .font(.headline)
-                            .foregroundColor(.blue)
-                            .padding()
-                            .onTapGesture {
-                                presentationMode.wrappedValue.dismiss()
-                            }
-                        Spacer()
-                    }
-                    
-                    Text(selectedItem.title)
-                        .font(.headline)
-                    
-                }
+                sheetTopBar
                 
                 ZStack
                 {
-                    Image(selectedItem.image)
-                        .resizable()
-                        .frame(width: UIScreen.main.bounds.width)
-                        .ignoresSafeArea()
-                    
-                    Rectangle()
-                        .background(.black)
-                        .frame(width: UIScreen.main.bounds.width)
-                        .ignoresSafeArea()
-                        .opacity(0.3)
-                    
-                    Rectangle()
-                        .foregroundColor(.white)
-                        .cornerRadius(Constants.cornerRadius)
-                        .padding()
-                    
-                    
+                    sheetBackground
+
                     VStack {
                         
                         ZStack {
@@ -123,26 +94,7 @@ extension SheetView {
     var combineSheetView : some View {
     
         VStack{
-            
-            // 상단 바
-            ZStack
-            {
-                HStack{
-                    Text("Done")
-                        .font(.headline)
-                        .foregroundColor(.blue)
-                        .padding()
-                        .onTapGesture {
-                            presentationMode.wrappedValue.dismiss()
-                        }
-                    Spacer()
-                }
-                
-                Text(selectedItem.title)
-                    .font(.headline)
-                
-            }
-            
+            sheetTopBar
             ZStack
             {
                 Image(selectedItem.image)
@@ -159,28 +111,21 @@ extension SheetView {
                 
                  
                 VStack(){
-                SnapCarousel(spacing: 20,index: $currentIndex, items: posts) { post in
+                SnapCarousel(spacing: 20,
+                             index: $currentIndex,
+                             items: posts) { post in
                     
                     GeometryReader{ proxy in
                         
                         let size = proxy.size
-                        
-//                        Image(post.postImage)
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fill)
-//                            .frame(width : size.width)
-//                            .cornerRadius(Constants.cornerRadius)
-                        
                         ZStack{
                             
                             Rectangle()
                                 .foregroundColor(.white)
-                            
-                            
+
                             VStack{
                                 SheetCardView(post: post)
-                                
-                               
+            
                                 Spacer()
                             }
                                 
@@ -189,25 +134,14 @@ extension SheetView {
                     }
                     .padding(.vertical,40)
 
-                    
-                
-                    
-                    
-                }.frame(maxWidth : .infinity, maxHeight: UIScreen.main.bounds.height * 0.7, alignment: .leading)
+
+                }.frame(maxWidth : .infinity,
+                        maxHeight: UIScreen.main.bounds.height * 0.7,
+                        alignment: .leading)
                 
                     // Indicator
-                    HStack(spacing: 10){
-                        
-                        ForEach(posts.indices, id: \.self) { index in
-                            
-                            Circle()
-                            //    .fill(Color.black.opacity(currentIndex == index ? 1 : 0.1))
-                                .fill(currentIndex == index ? Color.black : Color.white)
-                                .frame(width: 10, height: 10)
-                                .scaleEffect(currentIndex == index ? 1.0 : 0.6)
-                                .animation( .spring(), value: currentIndex == index)
-                        }
-                    }
+                    
+                    indicaterView
                     
                 
                     
@@ -232,6 +166,61 @@ extension SheetView {
                    
 
                 }
+            }
+        }
+    }
+    
+    var sheetTopBar : some View {
+        ZStack
+        {
+            HStack{
+                Text("Done")
+                    .font(.headline)
+                    .foregroundColor(.blue)
+                    .padding()
+                    .onTapGesture {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                Spacer()
+            }
+            
+            Text(selectedItem.title)
+                .font(.headline)
+            
+        }
+    }
+    
+    var sheetBackground : some View {
+        ZStack{
+            Image(selectedItem.image)
+                .resizable()
+                .frame(width: UIScreen.main.bounds.width)
+                .ignoresSafeArea()
+            
+            Rectangle()
+                .background(.black)
+                .frame(width: UIScreen.main.bounds.width)
+                .ignoresSafeArea()
+                .opacity(0.3)
+            
+            Rectangle()
+                .foregroundColor(.white)
+                .cornerRadius(Constants.cornerRadius)
+                .padding()
+        }
+    }
+    
+    var indicaterView: some View {
+        HStack(spacing: 10){
+            
+            ForEach(posts.indices, id: \.self) { index in
+                
+                Circle()
+                //    .fill(Color.black.opacity(currentIndex == index ? 1 : 0.1))
+                    .fill(currentIndex == index ? Color.black : Color.white)
+                    .frame(width: 10, height: 10)
+                    .scaleEffect(currentIndex == index ? 1.0 : 0.6)
+                    .animation( .spring(), value: currentIndex == index)
             }
         }
     }
