@@ -22,8 +22,8 @@ struct DictionaryView: View {
                             Text("Core Concept")
                                 .font(.title)
                                 .bold()
-                                .padding()
-                            
+                                .padding(.horizontal, 20)
+
                             Spacer()
                         }
                         
@@ -58,8 +58,8 @@ struct DictionaryView: View {
                             Text("Async API")
                                 .font(.title)
                                 .bold()
-                                .padding()
-                            
+                                .padding(.horizontal, 20)
+
                             Spacer()
                         }
                         

@@ -14,8 +14,7 @@ struct NotificationView: View {
     @State var showSheet = false
     var cancellables = Set<AnyCancellable>()
 
-    let myNotification = Notification.Name("MyNotificatioon")
-    let center = NotificationCenter.default
+ 
 
     
     init(){
@@ -44,14 +43,16 @@ struct NotificationView: View {
                         }
                     
                     }
-                    .onAppear{
-                        makeNotification()
-                    }
+                    
             
                 
                     Button(action: {
-                        center.post(name: myNotification, object: nil)
-                      
+                        if !isArrived {
+                            makeNotification()
+
+                        } else{
+                            isArrived = false
+                        }
                     }, label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: Constants.cornerRadius)
@@ -99,17 +100,18 @@ struct NotificationView: View {
 
     func makeNotification(){
         
-     
+        let myNotification = Notification.Name("MyNotificatioon")
+        let center = NotificationCenter.default
         let publisher = center.publisher(for: myNotification, object: nil)
-        
         let subscription = publisher.sink { _ in
-            print("완료")
+            isArrived = true
 
         }
       
+        center.post(name: myNotification, object: nil)
 
 
-      //   subscription.cancel()//
+        subscription.cancel()//
     }
 
 

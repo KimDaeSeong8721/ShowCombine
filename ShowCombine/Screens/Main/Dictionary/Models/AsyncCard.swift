@@ -26,24 +26,20 @@ extension AsyncCard {
     static let SampleData : [AsyncCard] =
     [ AsyncCard(image: "notificationCenter",
                 title: "NotificationCenter",
-                subTitle: "",
+                subTitle: "broadcast of info",
                 traditionalCode: "",
                 CombineCode: ""),
       AsyncCard(image: "timers",
                 title: "Timers",
-                subTitle: "",
+                subTitle: "fire after a certain time",
                 traditionalCode: "",
                 CombineCode: ""),
       AsyncCard(image: "networking",
                 title: "Networking",
-                subTitle: "",
-                traditionalCode: "",
-                CombineCode: ""),
-      AsyncCard(image: "gcd",
-                title: "GCD",
-                subTitle: "",
+                subTitle: "create net connection",
                 traditionalCode: "",
                 CombineCode: "")
+     
       
       
       
