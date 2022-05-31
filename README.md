@@ -1,6 +1,3 @@
 # ShowCombine
 
 
-abc
-
-bcd
